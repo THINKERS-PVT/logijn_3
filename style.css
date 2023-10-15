@@ -395,12 +395,33 @@ form.sign-in-form {
   }
 }
 
+.animation {
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease;
+}
 
-.footer {  
-  margin-top: 20px;  
-}  
-  
-.footer a {  
-  color: #fff;  
-  text-decoration: none;  
-}  
+.animation:hover {
+  transform: translatey(100px);
+}
+
+.content-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background-color: #fff;
+}
+
+.thinkers-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.box {
+  cursor: pointer;
+}
